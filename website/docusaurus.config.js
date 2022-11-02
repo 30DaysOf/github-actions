@@ -84,7 +84,7 @@ const config = {
           {
             type: 'doc',
             position: 'left',
-            label: 'TIL',
+            label: 'Units',
             docId: 'tutorials/001',
           },
         ],
