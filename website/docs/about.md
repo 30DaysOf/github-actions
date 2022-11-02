@@ -1,4 +1,3 @@
 ---
 slug: /
-title: About This Journey
-
+title: Learning Plan

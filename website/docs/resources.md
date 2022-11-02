@@ -1,3 +1,3 @@
 ---
-title: Useful Resources
+title: Learning Resources
 ---

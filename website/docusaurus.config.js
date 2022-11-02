@@ -1,35 +1,25 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-// CONFIG: Set for use in themeConfig: prism
-//    Pick: https://github.com/FormidableLabs/prism-react-renderer/tree/master/src/themes
 const lightCodeTheme = require("prism-react-renderer/themes/github");
 const darkCodeTheme = require("prism-react-renderer/themes/vsDark");
 
-// USAGE: Config object can be accessed via React context as `{siteConfig}`
-//   See: https://docusaurus.io/docs/configuration#custom-configurations
 /** @type {import('@docusaurus/types').Config} */
 const config = {
 
-  // CONFIG: Add Custom Fields - globally reference them from siteConfig
-  //    See: https://docusaurus.io/docs/deployment#using-environment-variables
   customFields: {
     description: "This specification defines a use case for a fictional rentals portals app.",
   },
+  title: 'GitHub Actions',
+  tagline: 'Learn Concepts. Build Actions. Automate Workflows.',
 
-   // CONFIG: Landing Pages uses this (also globally via siteConfig)
-  title: 'Learn In #30Days',
-  tagline: 'Plan Roadmaps - Document Progress',
-
-  // CONIFIG; GitHub Pages
   url: 'https://30DaysOf.github.io',
-  baseUrl: '/template/',  // template/
+  baseUrl: '/github-actions/', 
   favicon: 'img/favicon.ico',
-  organizationName: 'f30DaysOf', 
-  projectName: 'template', 
+  organizationName: '30DaysOf', 
+  projectName: 'github-actions', 
   deploymentBranch: 'gh-pages',
 
-  // CONFIG: Early detection for site health
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
@@ -38,38 +28,23 @@ const config = {
     locales: ['en'],
   },
 
-  // CONFIG: Set presets for chosen theme
   presets: [
     [
-      // -- START presets-classic options ----
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
-
-        // CONFIG: docs = collections of pages, tutorials, documentation
-        //    See: https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-docs
-        //    See: https://docusaurus.io/docs/docs-introduction#docs-only-mode
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           routeBasePath: '/',
         },
 
-        // CONFIG: blog = timestamped pages, tags, site feed 
-        //    See: https://docusaurus.io/docs/api/plugins/@docusaurus/plugin-content-blog
         blog: false,
-
-        // CONFIG: theme = currently using `classic`
-        //    See: https://docusaurus.io/docs/api/themes/@docusaurus/theme-classic
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
       }),
-       // -- END presets-classic options ----
     ],
   ],
-
-  // CONFIG: theme = set properties for UI like navbar, footer, docs, copyright etc.
-  //    See: https://docusaurus.io/docs/api/docusaurus-config#themeConfig
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -88,7 +63,7 @@ const config = {
       },
 
       navbar: {
-        title: 'In #30Days',
+        title: '#30DaysOfActions',
         logo: {
           alt: 'Logo',
           src: 'img/logo.svg',
@@ -100,7 +75,7 @@ const config = {
 
         items: [
           {
-            href: 'https://github.com/30DaysOf/template',
+            href: 'https://github.com/30DaysOf/github-actions',
             position: 'right',
             className: 'header-github-link',
             'aria-label': 'GitHub repository',
@@ -109,27 +84,15 @@ const config = {
           {
             type: 'doc',
             position: 'left',
-            label: 'Concepts',
-            docId: 'concepts/01',
-          },
-          {
-            type: 'doc',
-            position: 'left',
-            label: 'Tutorials',
-            docId: 'tutorials/toc',
-          },
-          {
-            type: 'doc',
-            position: 'left',
-            label: 'Solutions',
-            docId: 'solutions/01',
+            label: 'TIL',
+            docId: 'tutorials/001',
           },
         ],
       },
 
       footer: {
         style: 'dark',
-        copyright: `Copyright © ${new Date().getFullYear()} Nitya Narasimhan - Built with Docusaurus - Icons By Undraw.co`,
+        copyright: `Copyright © ${new Date().getFullYear()} Nitya Narasimhan - Built with Docusaurus`,
         links: []
       },
 
@@ -139,9 +102,6 @@ const config = {
       },
     }),
 
-
-    // CONFIG: Define plugins
-    //    See: https://docusaurus.io/docs/using-plugins
     plugins: [ ],
   };
 

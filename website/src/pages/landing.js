@@ -32,7 +32,6 @@ export default function Home() {
     <Layout
       title={`${siteConfig.title}`}
       description="Jumpstart your learning journey ..">
-      <HomepageHeader />
       <main>
         <HomepageFeatures />
       </main>
