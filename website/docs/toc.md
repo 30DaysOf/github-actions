@@ -12,9 +12,9 @@ title: Roadmap
 
 ## Activity Timeline
 
-Will update this section with links to daily progress articles for roadmap.
+Once the Concepts and Tutorials content are complete, we can come back and organize the content into "30Days" format for structured learning journeys.
 
-| Unit | What you can learn by working through this unit |
+| Unit | What will you learn/build in this unit? |
 |:---|:---|
 | #001 | |
 | #002 | |

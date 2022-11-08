@@ -84,7 +84,13 @@ const config = {
           {
             type: 'doc',
             position: 'left',
-            label: 'Units',
+            label: 'Concepts',
+            docId: 'concepts/001',
+          },
+          {
+            type: 'doc',
+            position: 'left',
+            label: 'Tutorials',
             docId: 'tutorials/001',
           },
         ],
