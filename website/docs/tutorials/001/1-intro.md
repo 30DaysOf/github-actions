@@ -9,7 +9,12 @@ slug: /
 
 ## Setup
 
-Create `.github/workflows/001-first-action.yml` and copy in the following code.Then commit the changes to your repo.
+1. Create `.github/workflows/001-first-action.yml` and copy in the following code.
+2. commit the changes to your repo.
+3. Visit the [GitHub Actions Dashboard](https://github.com/30DaysOf/github-actions/actions/) to see actions associated with this repo
+4. You should see [GitHub Actions Demo](https://github.com/30DaysOf/github-actions/actions/workflows/001-first-action.yml) as one of the workflows
+    - Click to see history of runs for this workflow (should be 1 = first run)
+    - History should show `001-first-action.yml` as source file - click to see code
 
 ```
 name: GitHub Actions Demo
@@ -31,3 +36,8 @@ jobs:
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
 ```
+
+## Experiments
+
+1. Try changing the 'name` in the actions workflow YAML file to "001 - First Actions Example" - what happens?
+2. 
