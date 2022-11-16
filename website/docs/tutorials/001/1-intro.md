@@ -39,5 +39,8 @@ jobs:
 
 ## Experiments
 
-1. Try changing the 'name` in the actions workflow YAML file to "001 - First Actions Example" - what happens?
-2. 
+| Action | Outcome |
+|:---|:---|
+|Try changing the 'name` in the actions workflow YAML file to "001 - First Actions Example" - what happens? | The [Actions dashboard](https://github.com/30DaysOf/github-actions/actions) should show the updated name for that flow.|
+| ![Disable Workflow screenshot](./disable-workflow.png) <br/> Go to the [specific workflow page](https://github.com/30DaysOf/github-actions/actions/workflows/001-first-action.yml) in GitHub Actions dashboard and click "Disable workflow" as shown, then commit changes. | |
+| | | 
