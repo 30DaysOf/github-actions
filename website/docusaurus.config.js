@@ -75,23 +75,16 @@ const config = {
 
         items: [
           {
+            type: 'doc',
+            position: 'right',
+            label: 'Roadmap',
+            docId: 'toc',
+          },
+          {
             href: 'https://github.com/30DaysOf/github-actions',
             position: 'right',
             className: 'header-github-link',
             'aria-label': 'GitHub repository',
-          },
-
-          {
-            type: 'doc',
-            position: 'left',
-            label: 'Concepts',
-            docId: 'concepts/001',
-          },
-          {
-            type: 'doc',
-            position: 'left',
-            label: 'Tutorials',
-            docId: 'tutorials/001',
           },
         ],
       },

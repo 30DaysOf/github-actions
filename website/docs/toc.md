@@ -1,5 +1,5 @@
 ---
-slug: /
+slug: /toc
 title: Roadmap
 ---
 
@@ -16,7 +16,7 @@ Once the Concepts and Tutorials content are complete, we can come back and organ
 
 | Unit | What will you learn/build in this unit? |
 |:---|:---|
-| #001 | [What is a GitHub Action?](concepts/001.md)  <br/> [Build/Run a GitHub Action](tutorials/001.md) |
+| #001 | |
 | #002 | |
 | #003 | |
 | #004 | |
